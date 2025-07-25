@@ -13,8 +13,11 @@ async function main() {
   const ai = new GoogleGenAI({ apiKey });
 
   const prompt = `
-  Yağmurdan sonra Kadıköy sokaklarında yürüyen iki genç, duygusal bir tartışma yaşar. Kadın, duygularını açıkça ifade eder. Adam ise ona sevgiyle yaklaşır. Sonunda ikisi de duygularına yenik düşüp öpüşürler. Kamera etraflarında döner, fonda Türkçe bir indie rock parçası çalar.
-  `;
+11 Eylül 2001, sabah saatleri. Manhattan semalarında süzülen American Airlines uçağının kokpitindeyiz. Kaptan pilot (James Walker, 48), co-pilot ise yeni evlenmiş genç bir adam (Ethan Ross, 29). Başta her şey rutinde. Kokpitte radyo frekansı, gökyüzünün sonsuz maviliği ve prosedürel konuşmalar duyuluyor. James, gökyüzüne dalmışken aniden bazı sinyallerin tutarsızlaştığını fark ediyor. Kabinden gelen sesler, anormal hareketlenmeler. Co-pilot, panikle 'James, kabinde bir şey oluyor!' diyor. James arkasına dönüyor ama güvenlik kapısı kapalı. Sesler yükseliyor: bağırış, arbede.
+
+Dakikalar içinde uçak rotadan sapıyor. James’in elleri titriyor ama sesi hâlâ profesyonel. Radyo ile kuleye bağlanmaya çalışıyor: 'New York Center, American 11, acil durumdayız.' Radyo sessiz. Co-pilot gözleri dolmuş halde ailesinin fotoğrafına bakıyor. James derin bir nefes alıyor, elleri sıkıca kontrol kolunda. Kamera yavaşça James’in gözlerine yaklaşır. Gözleri yaşlı ama kararlı. İçinden geçiriyor: 'Bunu durduramıyorum...
+
+`;
 
   let operation;
   try {
@@ -54,7 +57,10 @@ async function main() {
 
   const videoFile = operation.response?.generatedVideos?.[0]?.video;
   if (!videoFile) {
-    console.error("[HATA] Video dosyası bulunamadı veya API yanıtı eksik:", JSON.stringify(operation.response, null, 2));
+    console.error(
+      "[HATA] Video dosyası bulunamadı veya API yanıtı eksik:",
+      JSON.stringify(operation.response, null, 2)
+    );
     process.exit(1);
   }
 
@@ -71,6 +77,9 @@ async function main() {
 }
 
 main().catch((err) => {
-  console.error("[GENEL HATA] Video oluşturma sırasında beklenmeyen bir hata:", err);
+  console.error(
+    "[GENEL HATA] Video oluşturma sırasında beklenmeyen bir hata:",
+    err
+  );
   process.exit(1);
 });
