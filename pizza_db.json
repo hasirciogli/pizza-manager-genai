@@ -1,0 +1,124 @@
+{
+  "stores": [
+    {
+      "id": "s1",
+      "name": "Luigi’s",
+      "distance_km": 1.2
+    },
+    {
+      "id": "s2",
+      "name": "SliceMaster",
+      "distance_km": 2.5
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "ORD37567",
+      "store_id": "s1",
+      "items": [
+        {
+          "qty": 1,
+          "sku": "MARG"
+        },
+        {
+          "sku": "PEPP",
+          "qty": 1
+        }
+      ],
+      "address": "Test Caddesi No:10, Test Mahallesi, Test Şehri",
+      "status": "Cancelled",
+      "eta_min": 30,
+      "total_eur": 18.9
+    },
+    {
+      "order_id": "ORD90873",
+      "store_id": "s1",
+      "items": [
+        {
+          "qty": 1,
+          "sku": "pizza_margherita"
+        },
+        {
+          "qty": 2,
+          "sku": "coke"
+        }
+      ],
+      "address": "Lorem Ipsum Sk. No:1, Izmir",
+      "status": "Cancelled",
+      "eta_min": 30,
+      "total_eur": 18.9
+    },
+    {
+      "order_id": "ORD67095",
+      "store_id": "s2",
+      "items": [
+        {
+          "qty": 1,
+          "sku": "pizza_pepperoni"
+        },
+        {
+          "qty": 1,
+          "sku": "fanta"
+        }
+      ],
+      "address": "Dolor Sit Amet Cd. No:42, Izmir",
+      "status": "Cancelled",
+      "eta_min": 30,
+      "total_eur": 18.9
+    },
+    {
+      "order_id": "ORD68517",
+      "store_id": "s1",
+      "items": [
+        {
+          "sku": "pizza_hawaiian",
+          "qty": 1
+        },
+        {
+          "qty": 3,
+          "sku": "sprite"
+        }
+      ],
+      "address": "Consectetur Adipiscing Elit Blv. No:7, Istanbul",
+      "status": "Cancelled",
+      "eta_min": 30,
+      "total_eur": 18.9
+    },
+    {
+      "order_id": "ORD21731",
+      "store_id": "s2",
+      "items": [
+        {
+          "sku": "pizza_vegetarian",
+          "qty": 1
+        },
+        {
+          "qty": 1,
+          "sku": "water"
+        }
+      ],
+      "address": "Sed Do Eiusmod Gec. No:101, Istanbul",
+      "status": "Cancelled",
+      "eta_min": 30,
+      "total_eur": 18.9
+    },
+    {
+      "order_id": "ORD58403",
+      "store_id": "s2",
+      "items": [
+        {
+          "sku": "pizza_vegetarian",
+          "qty": 4
+        },
+        {
+          "sku": "water",
+          "qty": 4
+        }
+      ],
+      "address": "Sed Do Eiusmod Gec. No:101, Istanbul",
+      "status": "Cancelled",
+      "eta_min": 30,
+      "total_eur": 18.9
+    }
+  ]
+}
